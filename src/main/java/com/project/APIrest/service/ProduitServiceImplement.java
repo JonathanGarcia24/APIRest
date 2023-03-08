@@ -43,6 +43,6 @@ public class ProduitServiceImplement implements ProduitService{
     @Override
     public String supprimer(Long id) {
         produitRepository.deleteById(id);
-        return "Produit supprimé";
+        return "Produit " + id.toString() + " supprimé";
     }
 }
